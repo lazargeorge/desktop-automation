@@ -1,10 +1,9 @@
 package desktop.automation.app;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import desktop.automation.exception.NotNumberException;
-
+import junit.framework.Assert;
 
 /**
  * Simple test for handling some operation via Calculator app.
