@@ -76,7 +76,8 @@
 					<argLine>-Xms512m -Xmx1024m</argLine>
 					<workingDirectory>target</workingDirectory>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/${suiteXml}</suiteXmlFile>
+<!-- 						<suiteXmlFile>src/test/resources/${suiteXml}</suiteXmlFile> -->
+				<suiteXmlFile>suites.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<configuration>
 						<excludedGroups>development</excludedGroups>
