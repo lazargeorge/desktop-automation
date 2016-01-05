@@ -1,8 +1,8 @@
 package desktop.automation.app;
 
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 
 /**
  * @author Paul Brodner
@@ -11,14 +11,16 @@ public abstract class CalculatorTest
 {
     Calculator calculator;
 
-    @BeforeTest
+
+    @BeforeClass
     public void openCalculator()
     {
         calculator = new Calculator();
         calculator.openApplication();
+        calculator.clear();
     }
 
-    @AfterTest
+    @AfterClass
     public void closeCalculator()
     {
         calculator.closeWindow();
@@ -27,6 +29,8 @@ public abstract class CalculatorTest
     @BeforeMethod
     public void clearResults()
     {
+    	if(calculator != null)
         calculator.clear();
     }
+    
 }

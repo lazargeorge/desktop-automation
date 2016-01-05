@@ -16,6 +16,7 @@ public class AdditionTest extends CalculatorTest
     @Test
     public void testSumOfTwoAndThree() throws NotNumberException
     {
+    	calculator.Calculator_Standard_Basic();
         calculator.add(2, 3);
         Assert.assertEquals("5", calculator.getResult());
     }

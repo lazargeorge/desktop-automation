@@ -4,6 +4,14 @@
 	<test name="Test">
 		<classes>
 			<class name="desktop.automation.app.AdditionTest" />
+			<class name="desktop.automation.app.SubstractionTest" />
+			<class name="desktop.automation.app.MultiplicationTest" />
+			<class name="desktop.automation.app.DivisionTest" />
+			<class name="desktop.automation.app.VariousTests" />
+			<class name="desktop.automation.app.EditMenuInteractionTest" />
+			<class name="desktop.automation.app.ViewMenuInteractionTest" />
+			<class name="desktop.automation.app.ProgrammerTest" />
+			<class name="desktop.automation.app.ScientificTests" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

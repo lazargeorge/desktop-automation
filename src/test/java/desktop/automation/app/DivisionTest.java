@@ -8,17 +8,18 @@ import desktop.automation.exception.NotNumberException;
 public class DivisionTest extends CalculatorTest {
 
 	 @Test
-	    public void testDivisionOfTwoAndThree() throws NotNumberException
+	    public void testDivisionOfSixAndTwo() throws NotNumberException
 	    {
-	        calculator.divide(3,2);
-	        Assert.assertEquals("6", calculator.getResult());
+	        calculator.divide(6,2);
+	        Assert.assertEquals("3", calculator.getResult());
 	    }
+	
 	
 	    @Test
 	    public void testMultipleDivision() throws NotNumberException
 	    {
-	    	calculator.divide(20,2);
-	    	calculator.divide(5,2);
+	    	calculator.divide(8,2);
+	    	calculator.divide(2,2);
 	        Assert.assertEquals("1", calculator.getResult());
 	    }
 	    
@@ -36,7 +37,7 @@ public class DivisionTest extends CalculatorTest {
 	    }
 	    
 		 @Test(expectedExceptions = NumberFormatException.class)
-		public void testDivisionOfNull() throws NumberFormatException, NotNumberException
+		public void testDivisionOfNull() throws NumberFormatException, NotNumberException, NullPointerException
 		{
 		     calculator.divide(3,0);
 		}
